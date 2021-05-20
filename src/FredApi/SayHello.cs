@@ -25,7 +25,7 @@ namespace FredApi
             dynamic data = JsonConvert.DeserializeObject(requestBody);
             name = name ?? data?.name;
 
-            string responseMessage = "Hallo, die SayHello.cs wurde angepasst!"
+            string responseMessage = "Hallo, die SayHello.cs wurde angepasst!";
 
             return new OkObjectResult(responseMessage);
         }
